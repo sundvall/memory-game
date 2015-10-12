@@ -1,0 +1,55 @@
+/*3d specific*/
+$flipspeed:700ms;
+
+.persp {
+	perspective:400px;
+}
+.pres3d {
+	transform-style:preserve-3d;
+}
+
+.backtofront {
+	animation: back_to_front;
+	animation-duration:$flipspeed;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.fronttoback {
+	animation: front_to_back;
+	animation-duration:$flipspeed;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.backhidden {
+	backface-visibility:hidden;
+}
+
+.flip_p {
+	transform:rotateY(180deg);
+}
+
+.rot0 {
+	transform:rotateY(0deg);
+}
+.rot180 {
+	transform:rotateY(180deg);
+}
+
+@keyframes back_to_front {
+	0% {
+	     transform: rotateY(180deg);
+	}
+	100% {
+	     transform: rotateY(0deg);
+	}
+}
+
+@keyframes front_to_back {
+	0% {
+	     transform: rotateY(0deg);
+	}
+	100% {
+	     transform: rotateY(180deg);
+	}
+}

@@ -1,0 +1,24 @@
+#memorygame .reset:hover {
+	box-shadow: 0px 0px 1px #666666;
+}
+#memorygame .reset {
+	position:relative;
+	top:0;
+	left:0;
+	background:transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image:url('../img/reset.png');
+    border:0;
+	border-radius:20px;
+    box-shadow: 0px 1px 3px #666666;
+    color: #4c5699;	
+	display:block;
+    font-family: Arial;
+    font-size: 20px;
+	height:40px;
+	margin: 3px auto 10px auto;
+    text-decoration: none;
+	width:40px;
+}

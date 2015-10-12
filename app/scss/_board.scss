@@ -1,0 +1,142 @@
+$width : 400px;
+$height : 60px;
+$info_wrap_height: 50px;
+$board_max_width : 400px;
+$logo_width: 100px;
+$score_logo_wrap_width: 25%;
+$score_logo_width: 80%;
+
+$border_A : 0px solid black;
+$border_B : 0px solid red;
+$border_C : 0px solid yellow;
+$border_D : 0px dashed green;
+
+#memorygame .logo_wrap {
+	display:block;
+	overflow:hidden;
+	width:$score_logo_wrap_width;
+	float:right;
+	img {
+		display:block;
+		width:80%;
+		margin:auto;
+	}
+}	
+
+
+#memorygame {
+	position:relative;
+	button.currentfocused {
+	    background-color:yellow;
+		
+	}
+ }
+
+#memorygame .confirm_wrap {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background-color:rgba(54, 25, 25, .5); 
+	display:block;
+	.confirm_box {
+		border-radius:3px;
+		left:20%;
+		right:20%;
+		height:50px;
+		max-width:250px;
+		margin:auto;
+		position:absolute;
+			background-color:rgba(255, 255, 255, .8); 
+	}
+	.confirm_text {
+		text-align:center;
+		font-size:1.2em;
+		line-height:1.4em;
+		border-bottom:1px solid grey;
+		display:block;
+	}	
+	.confirm_accept,.confirm_cancel {
+		width:50%;
+		height:25px;
+	}	
+	.confirm_cancel {
+		width:50%;
+	}
+}
+#memorygame .confirm_hide {
+	display:none;
+}
+#memorygame .confirm_show {
+	display:block;
+}
+
+#memorygame .info_wrap {
+	margin:auto;
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+#memorygame .reset_wrap {
+	display:block;
+	overflow:hidden;
+	width:$score_logo_wrap_width;
+	float:right;
+}
+
+#memorygame .score_wrap {
+	width:$score_logo_wrap_width;
+	float:right;
+	.score {
+		width:$score_logo_width;
+		margin:auto;	
+		text-align:center;
+		line-height:40px;
+		font-size:26px;
+		border-radius:20px;
+		box-shadow: 0px 1px 3px #666666;
+		margin: 3px auto 10px auto;
+	}
+	.player_1 {
+		width:$score_logo_width;	
+		margin:auto;	
+		text-align:center;
+	}	
+}	
+
+#memorygame {
+	div:focus {
+		outline:4;
+		border:$border_A;
+	};
+	overflow:hidden;
+	.board {
+		display:block;
+		overflow:hidden;
+		border:$border_D;
+		width:100%;
+		max-width:$board_max_width;
+		margin:auto;
+	}	
+	.board_items {
+		display:block;
+		overflow:hidden;
+		width:100%;
+		margin:auto;
+		.board_item {
+			width:25%;
+			border:$border_A;
+			float:left;
+			overflow:hidden;
+			displaty:block;
+			.board_item_content {
+				border:$border_B;
+				width:100%;
+				overflow:hidden;
+				position:relative;
+			}	
+		}
+	}
+}
+	

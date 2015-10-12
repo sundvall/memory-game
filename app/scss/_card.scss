@@ -1,0 +1,46 @@
+$border_C : 0px solid yellow;
+$height : 60px;
+
+#memorygame {
+	.card {
+		cursor: pointer;
+		position:relative;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		border:$border_C;
+/*		overflow:hidden;*/
+		height:$height;
+		
+		border-radius:5px;
+		box-shadow:2px 2px 3px grey;
+		outline:5px solid transparent;
+		border:3px solid #EAEAEA;
+		
+		.card_bg {
+			position:absolute;
+			left:0;
+			top:0;
+/*			background:transparent;*/
+			background:red;
+			width:100%;
+			z-index:2;
+		}
+		.card_fg {
+			position:absolute;
+			left:0;
+			top:0;
+			background:transparent;
+			width:100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index:4;
+		}	
+	}
+	.currentfocused .card{
+		    box-shadow: 4px 4px 5px grey;
+			top: -2px;
+			background-color:rgba(54, 25, 25, .5); 
+	}	
+}

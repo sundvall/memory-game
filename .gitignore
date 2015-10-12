@@ -1,0 +1,40 @@
+# OS generated files #
+#################
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build Systems #
+#################
+node_modules/
+.sass-cache
+*.css.map
+build/
+
+# Logs, databases #
+###################
+npm-debug.log
+*.log
+*.sql
+*.sqlite
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear

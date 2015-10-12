@@ -1,0 +1,378 @@
+/*reset*/
+#memorygame,
+#memorygame a,
+#memorygame article,
+#memorygame button,
+#memorygame div,
+#memorygame canvas,
+#memorygame h1,
+#memorygame h2,
+#memorygame h3,
+#memorygame h4,
+#memorygame h5,
+#memorygame h6,
+#memorygame img,
+#memorygame li,
+#memorygame nav,
+#memorygame ol,
+#memorygame p,
+#memorygame span,
+#memorygame ul,
+#memorygame video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 14px;
+  font-size: 12px;
+  font-family: arial, sans-serif;
+  vertical-align: baseline !important;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*reset end*/
+#memorygame .logo_wrap {
+  display: block;
+  overflow: hidden;
+  width: 25%;
+  float: right;
+}
+
+#memorygame .logo_wrap img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+#memorygame {
+  position: relative;
+}
+
+#memorygame button.currentfocused {
+  background-color: yellow;
+}
+
+#memorygame .confirm_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(54, 25, 25, 0.5);
+  display: block;
+}
+
+#memorygame .confirm_wrap .confirm_box {
+  border-radius: 3px;
+  left: 20%;
+  right: 20%;
+  height: 50px;
+  max-width: 250px;
+  margin: auto;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#memorygame .confirm_wrap .confirm_text {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  border-bottom: 1px solid grey;
+  display: block;
+}
+
+#memorygame .confirm_wrap .confirm_accept, #memorygame .confirm_wrap .confirm_cancel {
+  width: 50%;
+  height: 25px;
+}
+
+#memorygame .confirm_wrap .confirm_cancel {
+  width: 50%;
+}
+
+#memorygame .confirm_hide {
+  display: none;
+}
+
+#memorygame .confirm_show {
+  display: block;
+}
+
+#memorygame .info_wrap {
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+#memorygame .reset_wrap {
+  display: block;
+  overflow: hidden;
+  width: 25%;
+  float: right;
+}
+
+#memorygame .score_wrap {
+  width: 25%;
+  float: right;
+}
+
+#memorygame .score_wrap .score {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px #666666;
+  margin: 3px auto 10px auto;
+}
+
+#memorygame .score_wrap .player_1 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#memorygame {
+  overflow: hidden;
+}
+
+#memorygame div:focus {
+  outline: 4;
+  border: 0px solid black;
+}
+
+#memorygame .board {
+  display: block;
+  overflow: hidden;
+  border: 0px dashed green;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#memorygame .board_items {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+#memorygame .board_items .board_item {
+  width: 25%;
+  border: 0px solid black;
+  float: left;
+  overflow: hidden;
+  displaty: block;
+}
+
+#memorygame .board_items .board_item .board_item_content {
+  border: 0px solid red;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#memorygame .reset:hover {
+  box-shadow: 0px 0px 1px #666666;
+}
+
+#memorygame .reset {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/reset.png");
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px #666666;
+  color: #4c5699;
+  display: block;
+  font-family: Arial;
+  font-size: 20px;
+  height: 40px;
+  margin: 3px auto 10px auto;
+  text-decoration: none;
+  width: 40px;
+}
+
+#memorygame .card {
+  cursor: pointer;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid yellow;
+  /*		overflow:hidden;*/
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px grey;
+  outline: 5px solid transparent;
+  border: 3px solid #EAEAEA;
+}
+
+#memorygame .card .card_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*			background:transparent;*/
+  background: red;
+  width: 100%;
+  z-index: 2;
+}
+
+#memorygame .card .card_fg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+#memorygame .currentfocused .card {
+  box-shadow: 4px 4px 5px grey;
+  top: -2px;
+  background-color: rgba(54, 25, 25, 0.5);
+}
+
+/*3d specific*/
+.persp {
+  -webkit-perspective: 400px;
+          perspective: 400px;
+}
+
+.pres3d {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.backtofront {
+  -webkit-animation: back_to_front;
+          animation: back_to_front;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.fronttoback {
+  -webkit-animation: front_to_back;
+          animation: front_to_back;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.backhidden {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip_p {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.rot0 {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.rot180 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@-webkit-keyframes back_to_front {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes back_to_front {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes front_to_back {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes front_to_back {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes bgblink {
+  0% {
+    background: red;
+  }
+  50% {
+    background: yellow;
+  }
+  100% {
+    background: red;
+  }
+}
+
+@keyframes bgblink {
+  0% {
+    background: red;
+  }
+  50% {
+    background: yellow;
+  }
+  100% {
+    background: red;
+  }
+}
+
+.celebrate {
+  -webkit-animation: bgblink;
+          animation: bgblink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
