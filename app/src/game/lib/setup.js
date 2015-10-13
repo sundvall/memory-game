@@ -23,8 +23,8 @@ module.exports = (function () {
 			'rows': 4,
 			'cols': 4,
 			'gameType': constants.GAMETYPE_MEMORY,
-			'backofcardSrc': '../img/back_of_card.png',
-			'logoSrc': '../img/logo.png'
+			'backofcardSrc': './img/back_of_card.png',
+			'logoSrc': './img/logo.png'
 		},
 		initialization = function () {
 			var elements = view.init(conf).getElements();
