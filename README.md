@@ -35,4 +35,6 @@ gulp
 
 ### build for production
 A version is added to the 'versions'-folder containing a versionnumber.
-gulp build
+gulp build  
+
+<div align='center'><img height='auto' src = 'http://www.martinsundvall.se/developer/memorygame.png'></div>

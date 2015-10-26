@@ -20,8 +20,8 @@ module.exports = (function () {
 			callback.push(cb);
 			return callback.length;
 		},
-		unregister: function (cb) {
-			delete callback[cb];
+		unregister: function (index) {
+			delete callback[index];
 		},
 		dispatch: function (payload) {
 			callback.forEach(function (cb) {

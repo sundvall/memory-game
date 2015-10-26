@@ -13,13 +13,8 @@
 module.exports = (function () {
 	"use strict";
 
-	var dataflow = window.DATAFLOW,
-		actions = require('./actions'),
-		// dispatch = dataflow.dispatch,
-		// register = dataflow.register,
-		constants = dataflow.constants(),
-		// returnCallbacks = [],
-		// core = window.DOMCTRL,
+	var	actions = require('./actions'),
+		constants = window.DATAFLOW.constants(),
 		cDown = 40,
 		cEscape = 27,
 		cReturn = 13,
